@@ -1,0 +1,320 @@
+2024-04-28 02:17:12.929 | DEBUG    | federated_learning.arguments:log:253 - Arguments: 
+Batch Size: 64
+Test Batch Size: 1000
+Global Rounds: 100
+Local Epochs: 1
+Learning Rate: 0.01
+Momentum: 0.9
+Device: cpu
+Log Interval: 100
+Number of Clients: 20
+Dataset: MNIST
+Model Name: CNNMNIST
+Data distribution: IID
+Aggregation rule: DPFLA
+Attack Type 1: label_flipping
+Attack Type 2: label_flipping
+Malicious Rate: 0%
+Malicious Behavior Rate: 1
+
+2024-04-28 02:17:12.945 | INFO     | federated_learning.utils.sampling:distribute_dataset:17 - --> Loading of MNIST dataset
+2024-04-28 02:17:41.651 | INFO     | federated_learning.utils.sampling:distribute_dataset:32 - --> Dataset has been loaded!
+2024-04-28 02:17:41.653 | INFO     | federated_learning.models.model:setup_model:22 - --> Creating CNNMNIST model.....
+2024-04-28 02:17:41.665 | INFO     | federated_learning.models.model:setup_model:43 - --> Model has been created!
+2024-04-28 02:17:41.668 | INFO     | federated_learning.fl_core:__init__:86 - --> Distributing training data among clients
+2024-04-28 02:17:41.670 | INFO     | federated_learning.fl_core:__init__:94 - --> Training data have been distributed among clients
+2024-04-28 02:17:41.674 | INFO     | federated_learning.fl_core:__init__:97 - --> Creating peets instances
+2024-04-28 02:17:41.678 | INFO     | federated_learning.fl_core:run_experiment:254 - ===>Simulation started...
+2024-04-28 02:17:41.680 | INFO     | federated_learning.fl_core:run_experiment:285 - ====>Global model training started...
+2024-04-28 02:17:41.865 | DEBUG    | federated_learning.fl_core:run_experiment:297 - | Global training round : 1/100 |
+2024-04-28 02:17:41.868 | INFO     | federated_learning.fl_core:run_experiment:299 - Dropout rate for epoch 0: 0.49420649667814776
+2024-04-28 02:18:15.265 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.43446198630458055
+2024-04-28 02:18:15.284 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.6451967657330023
+2024-04-28 02:18:15.301 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.44183091319139356
+2024-04-28 02:18:15.326 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5385307486349289
+2024-04-28 02:18:15.347 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.6770704152474816
+2024-04-28 02:18:15.376 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.7140508067217537
+2024-04-28 02:18:15.402 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5229609890106068
+2024-04-28 02:18:15.423 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.3488439299169622
+2024-04-28 02:18:15.440 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.442330555926335
+2024-04-28 02:18:15.459 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.3683452504160281
+2024-04-28 02:18:15.461 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:64 - -------------------------------------
+2024-04-28 02:18:15.462 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:65 - Max Silhouette Coefficient: 0.7140508067217537
+2024-04-28 02:18:15.464 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:66 - Detect Class: 5
+2024-04-28 02:18:15.465 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:67 - Defense result:
+2024-04-28 02:18:15.466 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 0
+2024-04-28 02:18:15.467 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:18:15.469 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:18:15.470 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:18:15.472 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:18:15.474 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:18:15.475 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:18:15.476 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:18:15.478 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 0
+2024-04-28 02:18:15.479 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:18:15.494 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:87 - Number of Bad updates scoring 0: 
+2024-04-28 02:18:15.495 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:88 - Number of Good updates scoring 1: 
+2024-04-28 02:18:15.497 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:90 - Clustering Accuracy: 80.00%
+2024-04-28 02:18:15.498 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:91 - Clustering Precision: 1.0000
+2024-04-28 02:18:15.499 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:92 - Clustering Recall: 0.8000
+2024-04-28 02:18:15.500 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:93 - Clustering F1-score: 0.8889
+2024-04-28 02:18:15.508 | DEBUG    | federated_learning.fl_core:run_experiment:416 - Entered RFA and Performed Geometric new median
+2024-04-28 02:18:15.510 | DEBUG    | federated_learning.fl_core:run_experiment:426 - Aggregation took
+2024-04-28 02:18:15.511 | DEBUG    | federated_learning.fl_core:run_experiment:428 - Global weights
+2024-04-28 02:18:37.758 | DEBUG    | federated_learning.fl_core:test:143 - Average test loss: 2.2733, Test accuracy: 1944/10000 (19.44%)
+2024-04-28 02:18:37.777 | INFO     | federated_learning.fl_core:run_experiment:472 - Backdoor ASR 0.0
+2024-04-28 02:18:59.146 | DEBUG    | federated_learning.fl_core:run_experiment:498 - Class      - Accuracy
+2024-04-28 02:18:59.258 | INFO     | federated_learning.fl_core:run_experiment:500 - Zero       - 0.0
+2024-04-28 02:18:59.317 | INFO     | federated_learning.fl_core:run_experiment:500 - One        - 7.1
+2024-04-28 02:18:59.325 | INFO     | federated_learning.fl_core:run_experiment:500 - Two        - 54.3
+2024-04-28 02:18:59.327 | INFO     | federated_learning.fl_core:run_experiment:500 - Three      - 18.4
+2024-04-28 02:18:59.332 | INFO     | federated_learning.fl_core:run_experiment:500 - Four       - 0.0
+2024-04-28 02:18:59.334 | INFO     | federated_learning.fl_core:run_experiment:500 - Five       - 0.1
+2024-04-28 02:18:59.337 | INFO     | federated_learning.fl_core:run_experiment:500 - Six        - 0.0
+2024-04-28 02:18:59.343 | INFO     | federated_learning.fl_core:run_experiment:500 - Seven      - 20.2
+2024-04-28 02:18:59.350 | INFO     | federated_learning.fl_core:run_experiment:500 - Eight      - 37.7
+2024-04-28 02:18:59.354 | INFO     | federated_learning.fl_core:run_experiment:500 - Nine       - 53.6
+2024-04-28 02:18:59.870 | DEBUG    | federated_learning.fl_core:run_experiment:297 - | Global training round : 2/100 |
+2024-04-28 02:18:59.877 | INFO     | federated_learning.fl_core:run_experiment:299 - Dropout rate for epoch 1: 0.39200913316483543
+2024-04-28 02:19:44.222 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.39979547641168794
+2024-04-28 02:19:44.304 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5228427541478068
+2024-04-28 02:19:44.338 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5830102864773753
+2024-04-28 02:19:44.369 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.486048233812943
+2024-04-28 02:19:44.398 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4835840259004344
+2024-04-28 02:19:44.437 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4499879812348802
+2024-04-28 02:19:44.496 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.35452107982435827
+2024-04-28 02:19:44.581 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4904584713599025
+2024-04-28 02:19:44.618 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4638790319022498
+2024-04-28 02:19:44.700 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.46831869295038014
+2024-04-28 02:19:44.702 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:64 - -------------------------------------
+2024-04-28 02:19:44.705 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:65 - Max Silhouette Coefficient: 0.5830102864773753
+2024-04-28 02:19:44.709 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:66 - Detect Class: 2
+2024-04-28 02:19:44.711 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:67 - Defense result:
+2024-04-28 02:19:44.713 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.715 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.717 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.718 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.720 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.722 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.727 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.729 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.732 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.734 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.736 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.737 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:19:44.763 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:87 - Number of Bad updates scoring 0: 
+2024-04-28 02:19:44.771 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:88 - Number of Good updates scoring 1: 
+2024-04-28 02:19:44.778 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:90 - Clustering Accuracy: 100.00%
+2024-04-28 02:19:44.781 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:91 - Clustering Precision: 1.0000
+2024-04-28 02:19:44.784 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:92 - Clustering Recall: 1.0000
+2024-04-28 02:19:44.787 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:93 - Clustering F1-score: 1.0000
+2024-04-28 02:19:44.804 | DEBUG    | federated_learning.fl_core:run_experiment:416 - Entered RFA and Performed Geometric new median
+2024-04-28 02:19:44.811 | DEBUG    | federated_learning.fl_core:run_experiment:426 - Aggregation took
+2024-04-28 02:19:44.813 | DEBUG    | federated_learning.fl_core:run_experiment:428 - Global weights
+2024-04-28 02:20:10.858 | DEBUG    | federated_learning.fl_core:test:143 - Average test loss: 2.2404, Test accuracy: 3887/10000 (38.87%)
+2024-04-28 02:20:10.869 | INFO     | federated_learning.fl_core:run_experiment:472 - Backdoor ASR 0.0
+2024-04-28 02:20:35.920 | DEBUG    | federated_learning.fl_core:run_experiment:498 - Class      - Accuracy
+2024-04-28 02:20:35.932 | INFO     | federated_learning.fl_core:run_experiment:500 - Zero       - 7.1
+2024-04-28 02:20:35.935 | INFO     | federated_learning.fl_core:run_experiment:500 - One        - 68.7
+2024-04-28 02:20:35.937 | INFO     | federated_learning.fl_core:run_experiment:500 - Two        - 64.0
+2024-04-28 02:20:35.939 | INFO     | federated_learning.fl_core:run_experiment:500 - Three      - 47.8
+2024-04-28 02:20:35.940 | INFO     | federated_learning.fl_core:run_experiment:500 - Four       - 1.9
+2024-04-28 02:20:35.943 | INFO     | federated_learning.fl_core:run_experiment:500 - Five       - 0.9
+2024-04-28 02:20:35.945 | INFO     | federated_learning.fl_core:run_experiment:500 - Six        - 1.7
+2024-04-28 02:20:35.947 | INFO     | federated_learning.fl_core:run_experiment:500 - Seven      - 69.3
+2024-04-28 02:20:35.948 | INFO     | federated_learning.fl_core:run_experiment:500 - Eight      - 48.0
+2024-04-28 02:20:35.950 | INFO     | federated_learning.fl_core:run_experiment:500 - Nine       - 66.5
+2024-04-28 02:20:36.117 | DEBUG    | federated_learning.fl_core:run_experiment:297 - | Global training round : 3/100 |
+2024-04-28 02:20:36.119 | INFO     | federated_learning.fl_core:run_experiment:299 - Dropout rate for epoch 2: 0.4375939860963698
+2024-04-28 02:21:18.117 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5076474925328189
+2024-04-28 02:21:18.131 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.7297541364327743
+2024-04-28 02:21:18.144 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.6074941788819661
+2024-04-28 02:21:18.157 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.6058621280163223
+2024-04-28 02:21:18.171 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.38958791149173844
+2024-04-28 02:21:18.186 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5147722853908886
+2024-04-28 02:21:18.199 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5709723094154083
+2024-04-28 02:21:18.216 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5364505412364916
+2024-04-28 02:21:18.229 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4007528628373755
+2024-04-28 02:21:18.245 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.21884979789074002
+2024-04-28 02:21:18.246 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:64 - -------------------------------------
+2024-04-28 02:21:18.248 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:65 - Max Silhouette Coefficient: 0.7297541364327743
+2024-04-28 02:21:18.249 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:66 - Detect Class: 1
+2024-04-28 02:21:18.250 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:67 - Defense result:
+2024-04-28 02:21:18.250 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.251 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.253 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.254 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.255 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.255 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.256 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 0
+2024-04-28 02:21:18.256 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.257 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.258 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.260 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:21:18.267 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:87 - Number of Bad updates scoring 0: 
+2024-04-28 02:21:18.270 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:88 - Number of Good updates scoring 1: 
+2024-04-28 02:21:18.271 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:90 - Clustering Accuracy: 90.91%
+2024-04-28 02:21:18.272 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:91 - Clustering Precision: 1.0000
+2024-04-28 02:21:18.273 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:92 - Clustering Recall: 0.9091
+2024-04-28 02:21:18.274 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:93 - Clustering F1-score: 0.9524
+2024-04-28 02:21:18.279 | DEBUG    | federated_learning.fl_core:run_experiment:416 - Entered RFA and Performed Geometric new median
+2024-04-28 02:21:18.281 | DEBUG    | federated_learning.fl_core:run_experiment:426 - Aggregation took
+2024-04-28 02:21:18.282 | DEBUG    | federated_learning.fl_core:run_experiment:428 - Global weights
+2024-04-28 02:21:37.902 | DEBUG    | federated_learning.fl_core:test:143 - Average test loss: 2.1819, Test accuracy: 5498/10000 (54.98%)
+2024-04-28 02:21:37.915 | INFO     | federated_learning.fl_core:run_experiment:472 - Backdoor ASR 0.0
+2024-04-28 02:21:58.022 | DEBUG    | federated_learning.fl_core:run_experiment:498 - Class      - Accuracy
+2024-04-28 02:21:58.035 | INFO     | federated_learning.fl_core:run_experiment:500 - Zero       - 60.4
+2024-04-28 02:21:58.037 | INFO     | federated_learning.fl_core:run_experiment:500 - One        - 88.5
+2024-04-28 02:21:58.038 | INFO     | federated_learning.fl_core:run_experiment:500 - Two        - 56.6
+2024-04-28 02:21:58.040 | INFO     | federated_learning.fl_core:run_experiment:500 - Three      - 64.1
+2024-04-28 02:21:58.041 | INFO     | federated_learning.fl_core:run_experiment:500 - Four       - 25.2
+2024-04-28 02:21:58.044 | INFO     | federated_learning.fl_core:run_experiment:500 - Five       - 1.9
+2024-04-28 02:21:58.046 | INFO     | federated_learning.fl_core:run_experiment:500 - Six        - 27.9
+2024-04-28 02:21:58.047 | INFO     | federated_learning.fl_core:run_experiment:500 - Seven      - 84.3
+2024-04-28 02:21:58.048 | INFO     | federated_learning.fl_core:run_experiment:500 - Eight      - 67.0
+2024-04-28 02:21:58.050 | INFO     | federated_learning.fl_core:run_experiment:500 - Nine       - 61.4
+2024-04-28 02:21:58.195 | DEBUG    | federated_learning.fl_core:run_experiment:297 - | Global training round : 4/100 |
+2024-04-28 02:21:58.197 | INFO     | federated_learning.fl_core:run_experiment:299 - Dropout rate for epoch 3: 0.36329833137996415
+2024-04-28 02:22:42.252 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.3543001458462926
+2024-04-28 02:22:42.275 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.46384254487299814
+2024-04-28 02:22:42.299 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.35435187872731927
+2024-04-28 02:22:42.314 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.40573813835264105
+2024-04-28 02:22:42.331 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4185003863955397
+2024-04-28 02:22:42.349 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4768634219591356
+2024-04-28 02:22:42.371 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4718384143074832
+2024-04-28 02:22:42.387 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.3719996379160427
+2024-04-28 02:22:42.402 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.6185124585248868
+2024-04-28 02:22:42.418 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.32145417589142017
+2024-04-28 02:22:42.420 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:64 - -------------------------------------
+2024-04-28 02:22:42.421 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:65 - Max Silhouette Coefficient: 0.6185124585248868
+2024-04-28 02:22:42.422 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:66 - Detect Class: 8
+2024-04-28 02:22:42.423 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:67 - Defense result:
+2024-04-28 02:22:42.424 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.428 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.430 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.432 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.433 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.434 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.436 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.438 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.439 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.441 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.443 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.446 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:22:42.461 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:87 - Number of Bad updates scoring 0: 
+2024-04-28 02:22:42.463 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:88 - Number of Good updates scoring 1: 
+2024-04-28 02:22:42.465 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:90 - Clustering Accuracy: 100.00%
+2024-04-28 02:22:42.466 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:91 - Clustering Precision: 1.0000
+2024-04-28 02:22:42.467 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:92 - Clustering Recall: 1.0000
+2024-04-28 02:22:42.468 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:93 - Clustering F1-score: 1.0000
+2024-04-28 02:22:42.476 | DEBUG    | federated_learning.fl_core:run_experiment:416 - Entered RFA and Performed Geometric new median
+2024-04-28 02:22:42.479 | DEBUG    | federated_learning.fl_core:run_experiment:426 - Aggregation took
+2024-04-28 02:22:42.480 | DEBUG    | federated_learning.fl_core:run_experiment:428 - Global weights
+2024-04-28 02:23:07.273 | DEBUG    | federated_learning.fl_core:test:143 - Average test loss: 2.0463, Test accuracy: 6265/10000 (62.65%)
+2024-04-28 02:23:07.295 | INFO     | federated_learning.fl_core:run_experiment:472 - Backdoor ASR 0.0
+2024-04-28 02:23:37.227 | DEBUG    | federated_learning.fl_core:run_experiment:498 - Class      - Accuracy
+2024-04-28 02:23:37.235 | INFO     | federated_learning.fl_core:run_experiment:500 - Zero       - 92.4
+2024-04-28 02:23:37.237 | INFO     | federated_learning.fl_core:run_experiment:500 - One        - 94.9
+2024-04-28 02:23:37.239 | INFO     | federated_learning.fl_core:run_experiment:500 - Two        - 43.2
+2024-04-28 02:23:37.241 | INFO     | federated_learning.fl_core:run_experiment:500 - Three      - 71.3
+2024-04-28 02:23:37.242 | INFO     | federated_learning.fl_core:run_experiment:500 - Four       - 45.8
+2024-04-28 02:23:37.244 | INFO     | federated_learning.fl_core:run_experiment:500 - Five       - 3.9
+2024-04-28 02:23:37.246 | INFO     | federated_learning.fl_core:run_experiment:500 - Six        - 64.1
+2024-04-28 02:23:37.247 | INFO     | federated_learning.fl_core:run_experiment:500 - Seven      - 89.5
+2024-04-28 02:23:37.248 | INFO     | federated_learning.fl_core:run_experiment:500 - Eight      - 72.0
+2024-04-28 02:23:37.250 | INFO     | federated_learning.fl_core:run_experiment:500 - Nine       - 39.2
+2024-04-28 02:23:37.443 | DEBUG    | federated_learning.fl_core:run_experiment:297 - | Global training round : 5/100 |
+2024-04-28 02:23:37.445 | INFO     | federated_learning.fl_core:run_experiment:299 - Dropout rate for epoch 4: 0.28589807009263324
+2024-04-28 02:24:28.551 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5527828924506366
+2024-04-28 02:24:28.573 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5345633290668003
+2024-04-28 02:24:28.603 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.41317990668387494
+2024-04-28 02:24:28.632 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4162143182066122
+2024-04-28 02:24:28.666 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.3685191950610502
+2024-04-28 02:24:28.711 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5897145790558023
+2024-04-28 02:24:28.792 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.37973233713847365
+2024-04-28 02:24:28.819 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5767983734001382
+2024-04-28 02:24:28.843 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4932093251362358
+2024-04-28 02:24:28.884 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.2430557074851119
+2024-04-28 02:24:28.887 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:64 - -------------------------------------
+2024-04-28 02:24:28.889 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:65 - Max Silhouette Coefficient: 0.5897145790558023
+2024-04-28 02:24:28.891 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:66 - Detect Class: 5
+2024-04-28 02:24:28.893 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:67 - Defense result:
+2024-04-28 02:24:28.894 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.897 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.899 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.901 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.903 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.905 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.907 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.908 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.910 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.911 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.914 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.915 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.917 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.919 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:24:28.934 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:87 - Number of Bad updates scoring 0: 
+2024-04-28 02:24:28.936 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:88 - Number of Good updates scoring 1: 
+2024-04-28 02:24:28.938 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:90 - Clustering Accuracy: 100.00%
+2024-04-28 02:24:28.940 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:91 - Clustering Precision: 1.0000
+2024-04-28 02:24:28.942 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:92 - Clustering Recall: 1.0000
+2024-04-28 02:24:28.944 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:93 - Clustering F1-score: 1.0000
+2024-04-28 02:24:28.967 | DEBUG    | federated_learning.fl_core:run_experiment:416 - Entered RFA and Performed Geometric new median
+2024-04-28 02:24:28.970 | DEBUG    | federated_learning.fl_core:run_experiment:426 - Aggregation took
+2024-04-28 02:24:28.971 | DEBUG    | federated_learning.fl_core:run_experiment:428 - Global weights
+2024-04-28 02:24:59.851 | DEBUG    | federated_learning.fl_core:test:143 - Average test loss: 1.7847, Test accuracy: 6785/10000 (67.85%)
+2024-04-28 02:24:59.867 | INFO     | federated_learning.fl_core:run_experiment:472 - Backdoor ASR 0.0
+2024-04-28 02:25:22.888 | DEBUG    | federated_learning.fl_core:run_experiment:498 - Class      - Accuracy
+2024-04-28 02:25:22.900 | INFO     | federated_learning.fl_core:run_experiment:500 - Zero       - 94.8
+2024-04-28 02:25:22.902 | INFO     | federated_learning.fl_core:run_experiment:500 - One        - 96.8
+2024-04-28 02:25:22.903 | INFO     | federated_learning.fl_core:run_experiment:500 - Two        - 53.2
+2024-04-28 02:25:22.904 | INFO     | federated_learning.fl_core:run_experiment:500 - Three      - 77.2
+2024-04-28 02:25:22.905 | INFO     | federated_learning.fl_core:run_experiment:500 - Four       - 67.5
+2024-04-28 02:25:22.906 | INFO     | federated_learning.fl_core:run_experiment:500 - Five       - 12.0
+2024-04-28 02:25:22.908 | INFO     | federated_learning.fl_core:run_experiment:500 - Six        - 72.3
+2024-04-28 02:25:22.909 | INFO     | federated_learning.fl_core:run_experiment:500 - Seven      - 90.0
+2024-04-28 02:25:22.910 | INFO     | federated_learning.fl_core:run_experiment:500 - Eight      - 65.2
+2024-04-28 02:25:22.912 | INFO     | federated_learning.fl_core:run_experiment:500 - Nine       - 40.1
+2024-04-28 02:25:23.067 | DEBUG    | federated_learning.fl_core:run_experiment:297 - | Global training round : 6/100 |
+2024-04-28 02:25:23.068 | INFO     | federated_learning.fl_core:run_experiment:299 - Dropout rate for epoch 5: 0.18288406363045812
+2024-04-28 02:26:17.659 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.5565121781786823
+2024-04-28 02:26:17.674 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4496938031092984
+2024-04-28 02:26:17.688 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4646264060056664
+2024-04-28 02:26:17.700 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.43956635520951337
+2024-04-28 02:26:17.713 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.40503680896179173
+2024-04-28 02:26:17.727 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4145321814965937
+2024-04-28 02:26:17.740 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4071990278030036
+2024-04-28 02:26:17.754 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.4108339340596755
+2024-04-28 02:26:17.767 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.3919277738957396
+2024-04-28 02:26:17.778 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:175 - Silhouette Coefficient：0.3387189525707718
+2024-04-28 02:26:17.780 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:64 - -------------------------------------
+2024-04-28 02:26:17.784 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:65 - Max Silhouette Coefficient: 0.5565121781786823
+2024-04-28 02:26:17.786 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:66 - Detect Class: 0
+2024-04-28 02:26:17.788 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:67 - Defense result:
+2024-04-28 02:26:17.789 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.790 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.791 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.792 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.793 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.794 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.795 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.796 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.797 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.799 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.800 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.801 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.802 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.803 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.804 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.805 | INFO     | federated_learning.fl_algorithm.DPFLA:score:71 - Good update scored 1
+2024-04-28 02:26:17.817 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:87 - Number of Bad updates scoring 0: 
+2024-04-28 02:26:17.818 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:88 - Number of Good updates scoring 1: 
+2024-04-28 02:26:17.819 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:90 - Clustering Accuracy: 100.00%
+2024-04-28 02:26:17.820 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:91 - Clustering Precision: 1.0000
+2024-04-28 02:26:17.821 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:92 - Clustering Recall: 1.0000
+2024-04-28 02:26:17.823 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:93 - Clustering F1-score: 1.0000
+2024-04-28 02:26:17.830 | DEBUG    | federated_learning.fl_core:run_experiment:416 - Entered RFA and Performed Geometric new median
+2024-04-28 02:26:17.833 | DEBUG    | federated_learning.fl_core:run_experiment:426 - Aggregation took
+2024-04-28 02:26:17.835 | DEBUG    | federated_learning.fl_core:run_experiment:428 - Global weights
+2024-04-28 02:26:36.663 | DEBUG    | federated_learning.fl_core:test:143 - Average test loss: 1.4045, Test accuracy: 7428/10000 (74.28%)
+2024-04-28 02:26:36.674 | INFO     | federated_learning.fl_core:run_experiment:472 - Backdoor ASR 0.0

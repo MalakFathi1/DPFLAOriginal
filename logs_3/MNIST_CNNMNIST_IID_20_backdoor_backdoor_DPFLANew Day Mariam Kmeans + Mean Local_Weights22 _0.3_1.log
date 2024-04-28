@@ -1,0 +1,66 @@
+2024-04-25 13:38:30.399 | DEBUG    | federated_learning.arguments:log:253 - Arguments: 
+Batch Size: 64
+Test Batch Size: 1000
+Global Rounds: 100
+Local Epochs: 1
+Learning Rate: 0.01
+Momentum: 0.9
+Device: cpu
+Log Interval: 100
+Number of Clients: 20
+Dataset: MNIST
+Model Name: CNNMNIST
+Data distribution: IID
+Aggregation rule: DPFLA
+Attack Type 1: backdoor
+Attack Type 2: backdoor
+Malicious Rate: 30.0%
+Malicious Behavior Rate: 1
+
+2024-04-25 13:38:30.411 | INFO     | federated_learning.utils.sampling:distribute_dataset:17 - --> Loading of MNIST dataset
+2024-04-25 13:38:53.290 | INFO     | federated_learning.utils.sampling:distribute_dataset:32 - --> Dataset has been loaded!
+2024-04-25 13:38:53.293 | INFO     | federated_learning.models.model:setup_model:22 - --> Creating CNNMNIST model.....
+2024-04-25 13:38:53.299 | INFO     | federated_learning.models.model:setup_model:43 - --> Model has been created!
+2024-04-25 13:38:53.302 | INFO     | federated_learning.fl_core:__init__:86 - --> Distributing training data among clients
+2024-04-25 13:38:53.303 | INFO     | federated_learning.fl_core:__init__:94 - --> Training data have been distributed among clients
+2024-04-25 13:38:53.306 | INFO     | federated_learning.fl_core:__init__:97 - --> Creating peets instances
+2024-04-25 13:38:54.945 | INFO     | federated_learning.fl_core:run_experiment:200 - ===>Simulation started...
+2024-04-25 13:38:54.949 | INFO     | federated_learning.fl_core:run_experiment:231 - ====>Global model training started...
+2024-04-25 13:38:55.142 | DEBUG    | federated_learning.fl_core:run_experiment:238 - | Global training round : 1/100 |
+2024-04-25 13:40:03.783 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.682577044515821
+2024-04-25 13:40:03.803 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.6228688899885496
+2024-04-25 13:40:03.829 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.7598451502272614
+2024-04-25 13:40:03.858 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.7976598784752655
+2024-04-25 13:40:03.878 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.8043631327138504
+2024-04-25 13:40:03.903 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.8703907561120822
+2024-04-25 13:40:03.927 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.8867614173755267
+2024-04-25 13:40:03.954 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.7305915986732716
+2024-04-25 13:40:03.977 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.631339746404349
+2024-04-25 13:40:03.997 | DEBUG    | federated_learning.fl_algorithm.DPFLA:batch_detect_outliers_kmeans:162 - Silhouette Coefficient：0.3652017614465505
+2024-04-25 13:40:04.003 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:63 - -------------------------------------
+2024-04-25 13:40:04.006 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:64 - Max Silhouette Coefficient: 0.8867614173755267
+2024-04-25 13:40:04.008 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:65 - Detect Class: 6
+2024-04-25 13:40:04.009 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:66 - Defense result:
+2024-04-25 13:40:04.010 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.011 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.012 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.014 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.015 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Bad update scored 0
+2024-04-25 13:40:04.018 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Bad update scored 0
+2024-04-25 13:40:04.021 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.023 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.024 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.025 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Bad update scored 0
+2024-04-25 13:40:04.028 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.029 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Bad update scored 0
+2024-04-25 13:40:04.031 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Bad update scored 0
+2024-04-25 13:40:04.034 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.035 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.038 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.040 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.043 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.044 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Bad update scored 0
+2024-04-25 13:40:04.045 | INFO     | federated_learning.fl_algorithm.DPFLA:score:70 - Good update scored 1
+2024-04-25 13:40:04.046 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:78 - Number of Bad updates scoring 0: 6.00%
+2024-04-25 13:40:04.048 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:79 - Number of Good updates scoring 1: 14.00%
+2024-04-25 13:40:04.052 | DEBUG    | federated_learning.fl_algorithm.DPFLA:score:81 - Percentage of wrong updates scored one: 100.00%
